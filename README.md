@@ -5,7 +5,7 @@
 htmlstream
 ------------
 
-simple html stream parser for html in C that does not malloc anything
+simple html stream parser for html in C that does not malloc anything, in a single header file only. no dependencies.
 
 It can read pretty bad html, but will not fix the structure by adding missing end tags 
 or guessing what the user wanted, like modern browsers do. 
@@ -22,6 +22,8 @@ Usage
 -------
 
 ```C
+
+#include "htmlstream.h"
 
 void my_open_cb(void *parg, const char *tag, int len);
 void my_close_cb(void *parg, const char *tag, int len);
