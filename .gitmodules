@@ -1,0 +1,3 @@
+[submodule "dessert"]
+	path = dessert
+	url = https://github.com/r-lyeh/dessert.git
