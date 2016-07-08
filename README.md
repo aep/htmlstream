@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/aep/htmlstream.svg?branch=master)](https://travis-ci.org/aep/htmlstream)
-
+[![NoDependencies](http://aep.github.io/images/no-dependencies.svg)](#)
 
 
 htmlstream
