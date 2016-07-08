@@ -1,6 +1,16 @@
-ALL: test pretty
+ALL: pretty tester
 
-test: test.c
-	$(CC) $^ -o $@ -g
+clean:
+	rm -f test pretty
+
+CFLAGS=-std=c99 -D_POSIX_C_SOURCE=1
+
+tester: test.c
+	$(CC) $(CFLAGS) $^ -o $@ -g
+
 pretty: pretty.c
-	$(CC) $^ -o $@ -g
+	$(CC) $(CFLAGS) $^ -o $@ -g
+
+
+test: tester
+	./tester
